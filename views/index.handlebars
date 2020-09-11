@@ -1,38 +1,55 @@
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Burger Time!</h1>
-  </div>
+<div class="jumbotron jumbotron-fluid bg-warning">
+    <div class="container">
+        <h1 class="display-4 text-center text-danger font-weight-bold">Burger Time!</h1>
+    </div>
 </div>
 
-<h2>On Deck!</h2>
+<div class="row mb-3">
+    <div class="col-3"></div>
+    <div class="col-6 text-center">
+        <h2>Add Your Favorite Burger!</h2>
+        <form class="create-form create-burger">
 
-<ul>
-  {{#each burgers}}
+            <div class="form-group">
+                <label for="new">Burger Name:</label>
+                <input type="text" id="new" name="burger_name">
+            </div>
+
+            <button class="btn btn-danger" type="submit">Add Burger</button>
+        </form>
+    </div>
+    <div class="col-3"></div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+<h2 class="text-center bg-light">On Deck...</h2>
+
+<ul class="text-right" style="list-style: none;">
+    {{#each burgers}}
     {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
+    {{> burgers/burger-block devoured=true}}
     {{/unless}}
-  {{/each}}
+    {{/each}}
 </ul>
+</div>
+<div class="col-4">
+    <h2 class="text-center">Whiskey River BBQ</h2>
+    <h5 class="text-center text-danger font-italic">Fan Favorite</h5>
+    <img class="ml-5 p-5"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQf7BvSsBGmsuOpVa_jp_5u8OoZGhXqktNctg&usqp=CAU" alt="burger">
 
-<h2>Homerun!</h2>
+</div>
+<div class="col-4">
+<h2 class="text-center bg-light">Homerun!</h2>
 
-<ul>
-  {{#each burgers}}
+<ul class="text-left" style="list-style: none;">
+    {{#each burgers}}
     {{#if devoured}}
     <li>
-      {{burger_name}}
+        {{burger_name}}
     </li>
     {{/if}}
-  {{/each}}
+    {{/each}}
 </ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form create-burger">
-
-  <div class="form-group">
-    <label for="new">Burger Name:</label>
-    <input type="text" id="new" name="burger_name">
-  </div>
-
-  <button type="submit">Add Burger</button>
-</form>
+</div>
+</div>

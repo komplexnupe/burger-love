@@ -1,5 +1,5 @@
 # Burger Time!
-
+Burger Time is a cool app that lets you virtually add and GRUB on your favorite burgers! All the grub with none of the calories!
 
 ## Table of Contents
 - [Installation](#installation)
@@ -16,7 +16,7 @@ npm install
     
 ## <a name="usage">Usage</a>
 
-npm start
+
 
 ## <a name="license">License</a>
 
@@ -27,6 +27,7 @@ npm start
 Leonard Love. Pull requests are welcome, but please open an issue first to discuss changes.
     
 ## <a name="test">Test</a>
+https://leonardlove-burger-time.herokuapp.com/
 
 Please see a demo of the project below:
 ![Demo]()
