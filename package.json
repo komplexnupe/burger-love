@@ -1,0 +1,25 @@
+{
+  "name": "burger-love",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komplexnupe/burger-love.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/komplexnupe/burger-love/issues"
+  },
+  "homepage": "https://github.com/komplexnupe/burger-love#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
