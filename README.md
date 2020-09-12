@@ -30,7 +30,7 @@ Leonard Love. Pull requests are welcome, but please open an issue first to discu
 https://leonardlove-burger-time.herokuapp.com/
 
 Please see a demo of the project below:
-![Demo](assets/images/burgertime.png)
+![Demo](./public/assets/images/burgertime.png)
 
 ## <a name="questions">Questions</a>
 
